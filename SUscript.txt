@@ -26,13 +26,9 @@ about:Label("你的用户ID:"..game.Players.LocalPlayer.UserId)
 about:Label("你的注入器:"..identifyexecutor())
 about:Label("你的用户名:"..game.Players.LocalPlayer.Character.Name)
 
-about:Button("苏脚本2",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/kukunb/kukulol/refs/heads/main/SuScript2"))()
-end)
+local UITab1 = win:Tab("通用功能",'7734068321')
 
-local UITab3 = win:Tab("通用功能",'7734068321')
-
-local about = UITab3:section("通用",true)
+local about = UITab1:section("通用",true)
 
 about:Button("汉化穿墙",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/TtmScripter/OtherScript/main/Noclip"))()
@@ -255,9 +251,9 @@ about:Button("操人脚本",function()
 loadstring(game:HttpGet("https://pastebin.com/raw/bzmhRgKL"))();
 end)
 
-local UITab99 = win:Tab("『FE』",'7734068321')
+local UITab2 = win:Tab("『FE』",'7734068321')
 
-local about = UITab99:section("『FE』",true)
+local about = UITab2:section("『FE』",true)
 
 about:Button("FE C00lgui", function()
 loadstring(game:GetObjects("rbxassetid://8127297852")[1].Source)()
@@ -302,9 +298,9 @@ about:Button("FE", function()
     loadstring(game:HttpGet('https://pastefy.ga/a7RTi4un/raw'))()
 end)
 
-local UITab4 = win:Tab("力量传奇",'7734068321')
+local UITab3 = win:Tab("力量传奇",'7734068321')
 
-local about = UITab4:section("力量传奇",true)
+local about = UITab3:section("力量传奇",true)
 
 about:Toggle("自动比赛开关", "AR", false, function(AR)
   while AR do wait() wait(2) game:GetService("ReplicatedStorage").rEvents.brawlEvent:FireServer("joinBrawl") end
@@ -416,9 +412,9 @@ about:Button("力量传奇(月星提供)",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/odhdshhe/liliangchuanqi/refs/heads/main/%E5%8A%9B%E9%87%8F%E4%BC%A0%E5%A5%87.lua"))()
 end)
 
-local UITab8 = win:Tab("Doors",'7734068321')
+local UITab4 = win:Tab("Doors",'7734068321')
 
-local about = UITab8:section("Doors",true)
+local about = UITab4:section("Doors",true)
 
 about:Toggle("刷新时通知", "TZ", false, function(TZ)
      _G.IE = (TZ and true or false) LatestRoom.Changed:Connect(function() if _G.IE == true then local n = ChaseStart.Value - LatestRoom.Value if 0 < n and n < 4 then Notification:Notify("请注意", "事件可能刷新于" .. tostring(n) .. " 房间","rbxassetid://17360377302",3) end end end) workspace.ChildAdded:Connect(function(inst) if inst.Name == "RushMoving" and _G.IE == true then Notify("请注意", "Rush 已刷新","rbxassetid://17360377302",3) elseif inst.Name == "AmbushMoving" and _G.IE == true then Notify("请注意", "Ambush 已刷新","rbxassetid://17360377302",3) end end)
@@ -474,9 +470,9 @@ about:Button("变身",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/Public-Scripts/main/Morphing/MorphScript.lua"))()
 end)
 
-local UITab10 = win:Tab("火箭发射模拟器",'7734068321')
+local UITab5 = win:Tab("火箭发射模拟器",'7734068321')
 
-local about = UITab10:section("火箭发射模拟器",true)
+local about = UITab5:section("火箭发射模拟器",true)
 
 about:Toggle("自动收集燃料", "ARL", false, function(ARL)
     isFuelScoopEnabled = ARL while true do wait() if isFuelScoopEnabled then for i, h in pairs(game.Players.LocalPlayer.Character:GetChildren()) do if h:IsA("Tool") and h.Name == "FuelScoop" then h:Activate() end end end end
@@ -543,9 +539,9 @@ about:Button("火箭发射模拟器3",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/odhdshhe/jm-/refs/heads/main/jm%E7%81%AB%E7%AE%AD%E5%8F%91%E5%B0%84%E9%87%8D%E5%81%9A(1).lua"))()
 end)
 
-local UITab18 = win:Tab("蜂群模拟器",'7734068321')
+local UITab6 = win:Tab("蜂群模拟器",'7734068321')
 
-local about = UITab18:section("蜂群模拟器",true)
+local about = UITab6:section("蜂群模拟器",true)
 
 about:Button("蜂群模拟器1",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Historia00012/HISTORIAHUB/main/BSS%20FREE"))()
@@ -556,18 +552,18 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/max0mind/lua/main/loa
 end)
 
 
-local UITab19 = win:Tab("小偷模拟器",'7734068321')
+local UITab7 = win:Tab("小偷模拟器",'7734068321')
 
-local about = UITab19:section("小偷模拟器",true)
+local about = UITab7:section("小偷模拟器",true)
 
 about:Button("小偷模拟器",function()
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/adrician/Thief-Simulator---GUI/main/Thief%20sim.lua"),true))()
 end)
 
 
-local UITab22 = win:Tab("一路向西",'7734068321')
+local UITab8 = win:Tab("一路向西",'7734068321')
 
-local about = UITab22:section("一路向西",true)
+local about = UITab8:section("一路向西",true)
 
 about:Button("一路向西1",function()
 loadstring(game:HttpGet("https://pastefy.app/q08owYGG/raw"))()
@@ -577,9 +573,9 @@ about:Button("一路向西2",function()
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/Drifter0507/scripts/main/westbound"),true))()
 end)
 
-local UITab23 = win:Tab("餐厅大亨",'7734068321')
+local UITab9 = win:Tab("餐厅大亨",'7734068321')
 
-local about = UITab23:section("餐厅大亨",true)
+local about = UITab9:section("餐厅大亨",true)
 
 about:Button("餐厅大亨1",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/toosiwhip/snake-hub/main/restaurant-tycoon-2.lua"))()
@@ -590,9 +586,9 @@ loadstring(game:HttpGet("https://pastefy.app/Ppqt0Gib/raw"))()
 end)
 
 
-local UITab42 = win:Tab("巴掌模拟器",'16060333448')
+local UITab10 = win:Tab("巴掌模拟器",'16060333448')
 
-local about = UITab42:section("功能",false)
+local about = UITab10:section("功能",false)
 
 about:Toggle("无CD","Toggle" ,false, function(Value)
     local player = game.Players.LocalPlayer
@@ -944,9 +940,9 @@ about:Button("自动刷巴掌",function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Slap%20Farm'))()
 end)
 
-local UITab6 = win:Tab("极速传奇",'7734068321')
+local UITab11 = win:Tab("极速传奇",'7734068321')
 
-local about = UITab6:section("极速传奇",true)
+local about = UITab11:section("极速传奇",true)
 
 about:Button("极速传奇1",function()
 loadstring(game:HttpGet('\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\98\111\121\115\99\112\47\98\101\116\97\47\109\97\105\110\47\37\69\57\37\56\48\37\57\70\37\69\53\37\66\65\37\65\54\37\69\55\37\56\50\37\66\56\37\69\56\37\66\53\37\66\55\46\108\117\97'))()
@@ -956,17 +952,17 @@ about:Button("极速传奇2",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/odhdshhe/jisuchuanqi/refs/heads/main/%E6%9E%81%E9%80%9F%E4%BC%A0%E5%A5%87.lua"))()
 end)
 
-local UITab54 = win:Tab("飞行比赛",'7734068321')
+local UITab12 = win:Tab("飞行比赛",'7734068321')
 
-local about = UITab54:section("飞行比赛",true)
+local about = UITab12:section("飞行比赛",true)
 
 about:Button("飞行比赛1",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NightCoded/script/main/fly-race.lua"))()
 end)
 
-local UITab55 = win:Tab("超级大力士模拟器",'7734068321')
+local UITab13 = win:Tab("超级大力士模拟器",'7734068321')
 
-local about = UITab55:section("超级大力士模拟器",true)
+local about = UITab13:section("超级大力士模拟器",true)
 
 about:Button("传送到开始区域", function()
                   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(85.86943817138672, 11.751949310302734, -198.07127380371094)
@@ -1076,9 +1072,9 @@ about:Button("超级大力士模拟器4",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe2/ToraIsMe2/main/0strongman", true))()
 end)
 
-local UITab45 = win:Tab("背上只因剑",'7734068321')
+local UITab14 = win:Tab("背上只因剑",'7734068321')
 
-local about = UITab45:section("背上只因剑",true)
+local about = UITab14:section("背上只因剑",true)
 
 about:Button("背上只因剑1",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0SwordWarriors"))()
@@ -1088,18 +1084,18 @@ about:Button("背上只因剑2",function()
 loadstring(game:HttpGet(('https://gist.githubusercontent.com/blox-hub-roblox/021bad62bbc6a0adc4ba4e625f9ad7df/raw/c89af6e1acf587d09e4ce4bc7510e7100e0c0065/swordWarrior.lua'),true))()
 end)
 
-local UITab53 = win:Tab("驾驶帝国",'7734068321')
+local UITab15 = win:Tab("驾驶帝国",'7734068321')
 
-local about = UITab53:section("驾驶帝国",true)
+local about = UITab15:section("驾驶帝国",true)
 
 about:Button("驾驶帝国",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Marco8642/science/main/drivingempire", true))()
 end)
 
 
-local UITab51 = win:Tab("鲨口求生",'7734068321')
+local UITab16 = win:Tab("鲨口求生",'7734068321')
 
-local about = UITab51:section("鲨口求生",true)
+local about = UITab16:section("鲨口求生",true)
 
 about:Dropdown("船只提取器", "FreeBoat", { "摩托艇", "摩托艇", "独角兽挺", "摩托艇", "红马林鱼", "单栀帆船", "拖船", "小船摩托艇", "摩托艇甜甜圈", "马林鱼", "管船", "渔船", "维京船", "小树林帆船", "红冠摩托艇", "双体船", "战斗船", "游船", "鸭海军陆战队", "派对船", "军事潜艇", "姜饼蒸汽船", "雪橇2022", "雪地摩托", "游轮"}, function(CS)
   game:GetService("ReplicatedStorage").EventsFolder.BoatSelection.UpdateHostBoat:FireServer(CS)
@@ -1125,12 +1121,391 @@ about:Button("鲨口求生刷船",function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/ghostapustaja/legionhub/main/sharkbite2'),true))()
 end)
 
-local UITab17 = win:Tab("其他脚本",'7734068321')
-local about = UITab17:section("其他脚本",true)
+local UITab17 = win:Tab("短信模拟器",'7734068321')
 
-about:Button("苏脚本2",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/kukunb/kukulol/refs/heads/main/SuScript2"))()
+local about = UITab17:section("短信模拟器",true)
+
+about:Button("短信模拟器1",function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/9hxkxUZ5'),true))()
 end)
+
+local UITab18 = win:Tab("法宝模拟器",'7734068321')
+
+local about = UITab18:section("法宝模拟器",true)
+
+about:Button("法宝模拟器汉化",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/zhanghuihuihuil/Script/main/%E6%B3%95%E5%AE%9D%E6%A8%A1%E6%8B%9F%E5%99%A8%E6%B1%89%E5%8C%96'))()
+end)
+
+about:Button("法宝模拟器",function()
+loadstring(game:HttpGet("https://pastefy.app/9bGpv4H3/raw"))()
+end)
+
+local UITab19 = win:Tab("一路向西",'7734068321')
+
+local about = UITab19:section("一路向西",true)
+
+about:Button("一路向西1",function()
+loadstring(game:HttpGet("https://pastefy.app/q08owYGG/raw"))()
+end)
+
+about:Button("一路向西2",function()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/Drifter0507/scripts/main/westbound"),true))()
+end)
+
+local UITab20 = win:Tab("餐厅大亨",'7734068321')
+
+local about = UITab20:section("餐厅大亨",true)
+
+about:Button("餐厅大亨1",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/toosiwhip/snake-hub/main/restaurant-tycoon-2.lua"))()
+end)
+
+about:Button("餐厅大亨2",function()
+loadstring(game:HttpGet("https://pastefy.app/Ppqt0Gib/raw"))()
+end)
+
+local UITab21 = win:Tab("模仿者",'7734068321')
+
+local about = UITab21:section("模仿者",true)
+
+about:Button("模仿者1",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ttjy9808/obfloadstringmainmimic/main/README.md", true))()
+end)
+
+local UITab22 = win:Tab("自然灾害模拟器",'7734068321')
+
+local about = UITab22:section("自然灾害模拟器",true)
+
+about:Button("黑洞脚本1",function()
+if "Rochips Loader" then
+	local Rochips_panel,v,u,i=loadstring,"/snippets","gwwv","/raw/main.lua" ;
+	Rochips_panel(game:HttpGet("https://glot.io"..v.."/" ..u.."877ga3"..i))();
+	return "it will load in around 3 - 131 seconds"
+end
+end)
+
+about:Button("黑洞脚本2",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/lililiugg/main/jm114514.lua"))()
+end)
+about:Label("黑洞1,2都要开 先开1,再开2")
+
+about:Button("黑洞脚本3",function()
+print('Hello World!')
+local UserInputService = game:GetService("UserInputService")
+local Mouse = game:GetService("Players").LocalPlayer:GetMouse()
+
+local Folder = Instance.new("Folder", game:GetService("Workspace"))
+local Part = Instance.new("Part", Folder)
+Part.Anchored = true
+Part.CanCollide = false
+Part.Transparency = 1
+
+local Attachment1 = Instance.new("Attachment", Part)
+
+local Updated = Mouse.Hit + Vector3.new(0, 5, 0)
+local ForceStrength = 1000
+
+local function TeleportPart(v)
+    if v:IsA("Part") and v.Anchored == false and v.Parent ~= game:GetService("Players").LocalPlayer.Character then
+        Mouse.TargetFilter = v
+        for _, x in next, v:GetChildren() do
+            if x:IsA("BodyAngularVelocity") or x:IsA("BodyForce") or x:IsA("BodyGyro") or x:IsA("BodyPosition") or x:IsA("BodyThrust") or x:IsA("BodyVelocity") or x:IsA("RocketPropulsion") then
+                x:Destroy()
+            end
+        end
+        if v:FindFirstChild("Attachment") then
+            v:FindFirstChild("Attachment"):Destroy()
+        end
+
+        v.CanCollide = false 
+
+        local Torque = Instance.new("BodyAngularVelocity", v)
+        Torque.AngularVelocity = Vector3.new(0, math.rad(ForceStrength), 0)
+        Torque.MaxTorque = Vector3.new(10000, 10000, 10000) -- 限制最大扭矩以防止散架
+
+        local AlignPosition = Instance.new("AlignPosition", v)
+        local Attachment2 = Instance.new("Attachment", v)
+
+        AlignPosition.MaxForce = 50000 -- 限制最大力以防止崩溃
+        AlignPosition.MaxVelocity = 50 -- 限制最大速度以保持稳定
+        AlignPosition.Responsiveness = 50
+        AlignPosition.Attachment0 = Attachment2
+        AlignPosition.Attachment1 = Attachment1
+    end
+end
+
+local function TeleportAllParts()
+    for _, v in next, game:GetService("Workspace"):GetDescendants() do
+        if v:IsA("Part") and v.Parent ~= game:GetService("Players").LocalPlayer.Character then
+            TeleportPart(v)
+        end
+    end
+end
+
+TeleportAllParts()
+
+game:GetService("Workspace").DescendantAdded:Connect(function(v)
+    if v:IsA("Part") and v.Parent ~= game:GetService("Players").LocalPlayer.Character then
+        TeleportPart(v)
+    end
+end)
+
+UserInputService.InputBegan:Connect(function(Key, Chat)
+    if Key.KeyCode == Enum.KeyCode.E and not Chat then
+        Updated = Mouse.Hit + Vector3.new(0, 5, 0)
+    end
+end)
+
+spawn(function()
+    while game:GetService("RunService").RenderStepped:Wait() do
+        Attachment1.WorldCFrame = Updated
+    end
+end)
+
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/SAZXHUB/Control-update/main/README.md'),true))()
+end)
+
+about:Button("键盘脚本",function()
+loadstring(game:HttpGet("https://gist.githubusercontent.com/RedZenXYZ/4d80bfd70ee27000660e4bfa7509c667/raw/da903c570249ab3c0c1a74f3467260972c3d87e6/KeyBoard%2520From%2520Ohio%2520Fr%2520Fr"))()
+end)
+
+about:Label("使用黑洞脚本3 刷取物品 手持物品 使用键盘E键 吸取物体")
+
+about:Button("黑洞脚本中心",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/Q1t1VkrL"))()
+end)
+
+about:Toggle("自动农场胜出", "ToggleInfo", false, function(bool)
+    _G.autowinfarm = bool;
+    while wait(.1) do
+        if _G.autowinfarm == true then
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-236, 180, 360, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        end
+end
+end)
+
+about:Toggle("地图投票用户界面", "Map Voting UI", false, function(bool)
+if bool == false then do game.Players.LocalPlayer.PlayerGui.MainGui.MapVotePage.Visible = false
+    end
+end
+if bool == true then do game.Players.LocalPlayer.PlayerGui.MainGui.MapVotePage.Visible = true
+    end
+end
+end)
+
+about:Toggle("在水上行走", "ToggleInfo", false, function(bool)
+ if bool == false then do game.Workspace.WaterLevel.CanCollide = false
+                            game.Workspace.WaterLevel.Size = Vector3.new(10, 1, 10)
+                        end
+                    end
+                    if bool == true then do game.Workspace.WaterLevel.CanCollide = true
+                            game.Workspace.WaterLevel.Size = Vector3.new(5000, 1, 5000)
+                        end
+                    end
+end)
+
+about:Toggle("游戏岛悬崖碰撞", "Togglelnfo", false, function(bool)
+for i, v in pairs (game.workspace:GetDescendants())do
+                                if v.Name == 'LowerRocks' then
+                                    v.CanCollide = bool
+                                end
+                            end
+end)
+
+about:Button("禁用坠落损坏",function()
+local FallDamageScript = (game.Players.LocalPlayer.Character ~= nil) and game.Players.LocalPlayer.Character:FindFirstChild("FallDamageScript") or nil
+                                if FallDamageScript then
+                                FallDamageScript:Destroy()
+                                end
+end)
+
+about:Toggle("自动禁用坠落伤害", "Toggleelnfo", false, function(bool)
+_G.NoFallDamage = bool;
+                            while wait(0.5) do
+                                    if _G.NoFallDamage == true then
+                            local FallDamageScript = (game.Players.LocalPlayer.Character ~= nil) and game.Players.LocalPlayer.Character:FindFirstChild("FallDamageScript") or nil
+                            if FallDamageScript then
+                            FallDamageScript:Destroy()
+                            end end end
+end)
+
+about:Button("打印下一次灾难(/console)",function()
+warn(game.Players.LocalPlayer.Character.SurvivalTag.Value)
+end)
+
+about:Button("移除灾难界面(暴风雪和沙尘暴)",function()
+game.Players.LocalPlayer.PlayerGui.BlizzardGui:destroy()
+		game.Players.LocalPlayer.PlayerGui.SandStormGui:destroy()
+end)
+
+about:Button("传送到地图",function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-115.828506, 65.4863434, 18.8461514, 0.00697017973, 0.0789371505, -0.996855199, -3.13589936e-07, 0.996879458, 0.0789390653, 0.999975681, -0.000549906865, 0.00694845384)
+end)
+
+about:Button("游戏岛 不建议用",function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-83.5, 38.5, -27.5, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+end)
+
+about:Button("产卵塔",function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-280, 170, 341, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+
+about:Slider('步行速度', 'SliderInfo', 16, 16, 250,false, function(value)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
+end)
+
+about:Slider('跳跃能力', 'SliderInfo', 16, 16, 250,false, function(value)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = value
+end)
+
+about:Button("单击TP工具",function()
+mouse = game.Players.LocalPlayer:GetMouse()
+                tool = Instance.new("Tool")
+                tool.RequiresHandle = false
+                tool.Name = "Click Teleport"
+                tool.Activated:connect(function()
+                local pos = mouse.Hit+Vector3.new(0,2.5,0)
+                pos = CFrame.new(pos.X,pos.Y,pos.Z)
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+                end)
+                tool.Parent = game.Players.LocalPlayer.Backpack
+end)
+
+about:Button("反AFK",function()
+wait(0.5)
+    local bb=game:service'VirtualUser'
+    game:service'Players'.LocalPlayer.Idled:connect(function()
+    bb:CaptureController()
+    bb:ClickButton2(Vector2.new())
+    end)
+ 
+    print("Antiafk enabled")
+end)
+
+about:Button("飞行",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/tt/main/jm%E9%A3%9E..lua"))()
+end)
+
+about:Button("自然灾害模拟器1",function()
+loadstring(game:HttpGet("https://gist.githubusercontent.com/TurkOyuncu99/7c75386107937fa006304efd24543ad4/raw/8d759dfcd95d39949c692735cfdf62baec0bf835/cafwetweg", true))()
+end)
+
+about:Button("自然灾害模拟器2",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/LoadstringUjHI6RQpz2o8", true))()
+end)
+
+about:Button("自然灾害模拟器3",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/9NLK7/93qjoadnlaknwldk/main/main'))()
+end)
+
+local UITab23 = win:Tab("进击的僵尸",'7734068321')
+
+local about = UITab23:section("进击的僵尸",true)
+
+about:Button("进击的僵尸",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Zombie%20Attack", true))()
+end)
+
+about:Button("自瞄",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/1Gp9c57U"))()
+end)
+
+local UITab24 = win:Tab("伐木大亨2",'7734068321')
+
+local about = UITab24:section("伐木大亨2",true)
+
+about:Button("禁漫中心",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/anlushanjinchangantangwanle/main/xiaopisimale.lua"))()
+end)
+
+about:Button("丁参",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/kdmd/main/%E4%B8%81%E4%B8%81%E4%B8%8E%E5%8F%82%E5%A4%A9%20%E4%BC%90%E6%9C%A8%E5%A4%A7%E4%BA%A8.txt"))()
+end)
+
+about:Button("最强",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/frencaliber/LuaWareLoader.lw/main/luawareloader.wtf",true))()
+end)
+
+about:Button("伐木大亨2  1",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Kavo-Ui/main/%E4%BC%90%E6%9C%A8%E5%A4%A7%E4%BA%A82.lua", true))()
+end)
+
+about:Button("伐木大亨2  2",function()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/NOOBARMYSCRIPTER/NOOBARMYSCRIPTER/main/AXE%20LOOP%20SCRIPT"), true))()
+end)
+
+about:Button("伐木大亨2  3",function()
+loadstring(game:HttpGet('https://getexploits.com/key-system/',true))('https://da.com/936657404291084298/1006220505583460352/Script.txt')
+end)
+
+about:Button("伐木大亨2  4",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/Q7seVBTV"))()
+end)
+
+local UITab25 = win:Tab("内脏与黑火药",'7734068321')
+
+local about = UITab25:section("内脏与黑火药",true)
+
+about:Button("茗月清风",function()
+loadstring(game:HttpGet(("\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\115\120\99\115\114\49\49\52\53\49\52\47\115\120\99\115\114\49\49\52\53\49\52\49\47\109\97\105\110\47\115\120\99\115\114\49\51\52\56\52\56\52\56\56\46\108\117\97"),true))()
+end)
+
+about:Button("牢大脚本",function()
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\34\104\116\116\112\115\58\47\47\102\114\101\101\110\111\116\101\46\98\105\122\47\114\97\119\47\109\117\122\110\104\101\114\104\114\117\34\41\44\116\114\117\101\41\41\40\41\10")()
+end)
+
+local UITab26 = win:Tab("汽车经销大亨",'7734068321')
+
+local about = UITab26:section("汽车经销大亨",true)
+
+about:Button("刷星星",function()
+loadstring(game:HttpGet("https://scriptblox.com/raw/LIMITED!-Car-Dealership-Tycoon-Moon-Team-16181"))()
+end)
+
+about:Button("汽车经销大亨1",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IExpIoit/Script/main/Car%20Dealership%20Tycoon.lua"))()
+end)
+
+about:Button("汽车经销大亨2",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/03sAlt/BlueLockSeason2/main/README.md"))()
+end)
+
+about:Button("汽车经销大亨3",function()
+loadstring(game:HttpGet("https://pastefy.app/5o594Q0i/raw"))()
+end)
+
+local UITab27 = win:Tab("超级足球联赛",'7734068321')
+
+local about = UITab27:section("超级足球联赛",true)
+
+about:Button("超级足球联赛1",function()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/xtrey10x/xtrey10x-hub/main/neo")()
+end)
+
+about:Button("超级足球联赛2",function()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/8fdf7c482d3b3d108ccdb282a7fc35e2.lua"))()
+end)
+
+local UITab28 = win:Tab("钓鱼模拟器",'7734068321')
+
+local about = UITab28:section("钓鱼模拟器",true)
+
+about:Button("钓鱼模拟器1",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/bebedi15/SRM-Scripts/main/Bebedi9960/SRMHub"))()
+end)
+
+about:Button("汉化",function()
+loadstring(game:HttpGet("https://pastefy.app/ptl5LG8c/raw"))()
+end)
+
+about:Button("钓鱼模拟器2",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/reddythedev/Reddy-Hub/main/_Loader'))()
+end)
+
+
+local UITab29 = win:Tab("其他脚本",'7734068321')
+local about = UITab29:section("其他脚本",true)
 
 about:Button("山脚本",function()
 loadstring(game:HttpGet("https://h.lkmc.asia/script/ssfb.lua"))()

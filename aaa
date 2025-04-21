@@ -1,4 +1,4 @@
 while true do
 print('我操你妈')
-wait(5)
+wait(0.01)
 end

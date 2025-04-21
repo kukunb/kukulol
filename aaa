@@ -1,4 +1,0 @@
-while true do
-print('我操你妈')
-wait(0.01)
-end
